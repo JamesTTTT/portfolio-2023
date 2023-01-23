@@ -10,7 +10,7 @@ const App = () => {
           <p className="p-2 text-2xl text-secondary">Fullstack Developer</p>
 
           <BrowserRouter>
-            <div className="flex justify-between h-100">
+            <div className="flex justify-between h-screen">
               <Navigation />
 
               <div className="float-right flex flex-col justify-end h-full">

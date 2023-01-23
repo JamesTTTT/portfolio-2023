@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { homeText } from "../../data/data";
-import { AiFillCaretRight } from "react-icons/ai";
+import { AiFillGithub } from "react-icons/ai";
 const Home = () => {
   const [header, setHeader] = useState("");
   const [body, setBody] = useState("");
@@ -20,41 +20,23 @@ const Home = () => {
     return () => clearTimeout(timeout);
   }, [body]);
 
-  const competensList = () => {
-    const content = [
-      "Javascript",
-      "Typescript",
-      "React",
-      "Node.js",
-      "Python",
-      "PHP",
-    ];
-    return content.map((item, index) => {
-      return (
-        <li
-          key={index}
-          className="text-text hover:text-secondary cursor-default flex"
-        >
-          <span className="text-secondary p-1 text-xs">
-            <AiFillCaretRight />
-          </span>
-          {item}
-        </li>
-      );
-    });
-  };
-
   return (
-    <div className="w-96 max-w-96 m-20 h-full cursor-default">
+    <div className="w-96 max-w-96 mb-10 h-full cursor-default flex flex-col justify-start mr-20">
       <p className="text-xl text-secondary font-bold">About me: </p>
       <h1 className="text-5xl font-bold my-2 ">{header}</h1>
       <p className="text-2xl blinking-cursor font-semibold text-text ">
         {body}
       </p>
-
-      <ul className="grid grid-rows-3 grid-flow-col gap-1 my-4 font-semibold">
-        {competensList()}
-      </ul>
+      <a
+        className="py-2 px-2 border border-secondary rounded-lg
+        text-white w-32 flex text-xl justify-evenly cursor-pointer hover:bg-opacity-20
+        hover:bg-secondary hover:text-secondary font-bold my-3"
+      >
+        Github
+        <span className="text-2xl ">
+          <AiFillGithub />
+        </span>
+      </a>
     </div>
   );
 };
