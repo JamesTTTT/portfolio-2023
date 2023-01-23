@@ -5,9 +5,9 @@ module.exports = {
   theme: {
     colors: {
       transparent: "transparent",
-      oxfordblue: "#061A40",
-      frenchblue: "#85ADFF",
-      cerise: "#D8315B",
+      main: "#061A40",
+      secondary: "#64ffda",
+      text: "#a3afd1",
       mint: "#F1FFFA",
       rose: "#DB2B39",
       white: "#FFFFFF",
@@ -15,6 +15,9 @@ module.exports = {
     extend: {
       height: {
         100: "40rem",
+      },
+      width: {
+        100: "30rem",
       },
     },
 
