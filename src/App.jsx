@@ -28,13 +28,7 @@ const App = () => {
 
             <BrowserRouter>
               <div className="flex justify-between h-full ">
-                <div className="flex flex-col justify-between h-5/6">
-                  <Navigation />
-                  {/* <p className="text-secondary font-bold">
-                    Press space to puase particles <br />
-                    Scroll to magnetic level
-                  </p> */}
-                </div>
+                <Navigation />
 
                 <div className="float-right flex flex-col justify-end h-full">
                   <Routes>

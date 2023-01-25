@@ -3,7 +3,7 @@ export default class Particle {
     this.position = p.createVector(p.random(p.width), p.random(p.height));
     this.velocity = p.createVector();
     this.acceleration = p.createVector();
-    this.topspeed = 10;
+    this.topspeed = 0;
     this.mag = 0.2;
     this.p = p;
   }
@@ -40,5 +40,13 @@ export default class Particle {
       this.mag -= 0.01;
     }
     // console.log(this.mag);
+  }
+
+  scatter(p) {
+    this.position = p.createVector(p.random(p.width), p.random(p.height));
+  }
+
+  getMag() {
+    return this.mag.toFixed(2);
   }
 }
