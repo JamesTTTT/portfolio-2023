@@ -4,32 +4,18 @@ export default class Particle {
     this.velocity = p.createVector();
     this.acceleration = p.createVector();
     this.topspeed = 10;
+    this.mag = 0.2;
     this.p = p;
   }
 
   update() {
     let mouse = this.p.createVector(this.p.mouseX, this.p.mouseY);
     this.acceleration = this.p.constructor.Vector.sub(mouse, this.position);
-    this.acceleration.setMag(0.2);
+    this.acceleration.setMag(this.mag);
 
     this.velocity.add(this.acceleration);
     this.velocity.limit(this.topspeed);
     this.position.add(this.velocity);
-
-    // function mouseClicked() {
-    //   this.p.fill(0);
-    // }
-
-    // this.p.mouseClicked(changeGray);
-    // if (this.position.x > this.p.width) {
-    //   console.log("ihappen");
-    //   this.position.add(-this.velocity);
-    // }
-    // if (this.position.y > this.p.height) {
-    //   console.log("ihappen2");
-    //   this.velocity.add(-1);
-    //   this.position.add(-this.velocity);
-    // }
   }
 
   display() {
@@ -37,5 +23,22 @@ export default class Particle {
     this.p.strokeWeight(2);
     this.p.fill(255);
     this.p.ellipse(this.position.x, this.position.y, 2, 2);
+  }
+
+  pause(isPause) {
+    if (isPause) {
+      this.topspeed = 10;
+    } else {
+      this.topspeed = 0;
+    }
+  }
+
+  changeMag(isUp) {
+    if (isUp && this.mag < 2) {
+      this.mag += 0.01;
+    } else if (!isUp && this.mag > 0.05) {
+      this.mag -= 0.01;
+    }
+    // console.log(this.mag);
   }
 }

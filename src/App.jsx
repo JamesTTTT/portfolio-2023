@@ -12,15 +12,29 @@ const App = () => {
   return (
     <div className="w-full h-screen max-h-screen overflow-hidden">
       <div className="flex w-full h-full justify-center items-center">
-        <div id="insideFrame" className="border border-secondary w-11/12 font-roboto text-white
-         h-5/6 max-h-5/6 relative overflow-scroll">
+        <div
+          id="insideFrame"
+          className="border border-secondary w-11/12 font-roboto text-white
+         h-5/6 max-h-5/6 relative overflow-scroll"
+        >
           <P5Wrap />
-          <div className="w-full p-4 z-10 h-full overflow-hidden">
+
+          <div
+            style={{ zIndex: 10 }}
+            className="w-full p-4 z-10 h-full overflow-hidden"
+          >
             <h1 className=" text-6xl">James Taylor</h1>
             <p className="p-2 text-2xl text-secondary">Fullstack Developer</p>
+
             <BrowserRouter>
               <div className="flex justify-between h-full ">
-                <Navigation />
+                <div className="flex flex-col justify-between h-5/6">
+                  <Navigation />
+                  {/* <p className="text-secondary font-bold">
+                    Press space to puase particles <br />
+                    Scroll to magnetic level
+                  </p> */}
+                </div>
 
                 <div className="float-right flex flex-col justify-end h-full">
                   <Routes>
