@@ -53,7 +53,7 @@ const Projects = () => {
       </h1>
 
       <div className="flex mb-4 justify-center w-fit">{projectMap()}</div>
-      <div className="bg-box p-5 border border-secondary">
+      <div className="bg-box p-5 border border-secondary bg-opacity-60">
         <p
           className="text-xl text-head max-h-80 overflow-scroll
          scrollbar-thumb-blue-400 font-normal"

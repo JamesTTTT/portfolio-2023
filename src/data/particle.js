@@ -3,7 +3,7 @@ export default class Particle {
     this.position = p.createVector(p.random(p.width), p.random(p.height));
     this.velocity = p.createVector();
     this.acceleration = p.createVector();
-    this.topspeed = 1;
+    this.topspeed = 0.5;
     this.mag = 1;
     this.prev = 0;
     this.p = p;
