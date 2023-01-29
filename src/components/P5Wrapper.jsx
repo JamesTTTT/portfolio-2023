@@ -18,10 +18,10 @@ const windowSize = () => {
 
 const Sketch = (p) => {
   let isPaused = true;
-  let pauseSatus = "Press 'space' to start ";
+  let pauseSatus = "Space to start ";
   p.setup = function () {
     p.createCanvas(windowSize().width, windowSize().height);
- 
+
     for (var i = 0; i < 1000; i++) {
       particles[i] = new Particle(p);
     }
@@ -29,14 +29,13 @@ const Sketch = (p) => {
 
   p.draw = function () {
     p.background("#061A40");
+    p.fill("");
     p.textSize(25);
-    p.text(
-      "Magnetic level: " + particles[0].getMag(),
-      10,
-      windowSize().height - 30
-    );
-    p.text("Press 'R' to scatter", 10, windowSize().height - 60);
-    p.text(pauseSatus, 10, windowSize().height - 90);
+
+    p.text("Speed: " + particles[0].getMag(), 10, windowSize().height - 20);
+    p.text("'R' to reverse", 10, windowSize().height - 80);
+    p.text(pauseSatus, 10, windowSize().height - 110);
+    p.text("'E' to  reset ", 10, windowSize().height - 50);
 
     for (let i = 0; i < particles.length; i++) {
       particles[i].update();
@@ -45,19 +44,24 @@ const Sketch = (p) => {
   };
 
   p.keyPressed = function () {
+    console.log(p.key);
     if (p.key == " ") {
       for (let i = 0; i < particles.length; i++) {
         particles[i].pause(isPaused);
       }
       isPaused = !isPaused;
       if (isPaused) {
-        pauseSatus = "Press 'space' to play";
+        pauseSatus = "Space to play";
       } else {
-        pauseSatus = "Press 'space' to pause";
+        pauseSatus = "Space to pause";
       }
-    } else if ((p.key = "r")) {
+    } else if (p.key === "r") {
       for (let i = 0; i < particles.length; i++) {
-        particles[i].scatter(p);
+        particles[i].rev(p);
+      }
+    } else if (p.key === "e") {
+      for (let i = 0; i < particles.length; i++) {
+        particles[i].scatter();
       }
     }
   };
@@ -70,7 +74,7 @@ const Sketch = (p) => {
       isUp = true;
     }
     for (let i = 0; i < particles.length; i++) {
-      particles[i].changeMag(isUp);
+      particles[i].changeSpeed(isUp);
     }
   };
 

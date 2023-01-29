@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { homeText } from "../../data/data";
-import { AiFillGithub } from "react-icons/ai";
+import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 const Home = () => {
   const [header, setHeader] = useState("");
   const [body, setBody] = useState("");
@@ -8,7 +8,7 @@ const Home = () => {
   useEffect(() => {
     const timeout = setTimeout(() => {
       setHeader(homeText.header.slice(0, header.length + 1));
-    }, 80);
+    }, 20);
 
     return () => clearTimeout(timeout);
   }, [header]);
@@ -16,27 +16,35 @@ const Home = () => {
   useEffect(() => {
     const timeout = setTimeout(() => {
       setBody(homeText.body.slice(0, body.length + 1));
-    }, 20);
+    }, 5);
     return () => clearTimeout(timeout);
   }, [body]);
 
   return (
-    <div className="w-96 max-w-96 mb-10 h-full cursor-default flex flex-col justify-start mr-20">
+    <div className="mb-10 mx-2 w-110 flex flex-col justify-center h-full mr-20">
       <p className="text-xl text-secondary font-bold">About me: </p>
       <h1 className="text-5xl font-bold my-2 ">{header}</h1>
-      <p className="text-2xl blinking-cursor font-semibold text-text ">
-        {body}
-      </p>
-      <a
-        className="py-2 px-2 border border-secondary rounded-lg
-        text-white w-32 flex text-xl justify-evenly cursor-pointer hover:bg-opacity-20
+      <p className="text-2xl blinking-cursor font-medium text-text ">{body}</p>
+      <div className="flex">
+        <a
+          className="py-2 px-2 border-2 border-secondary rounded-2xl
+        text-white w-fit flex text-xl justify-evenly cursor-pointer hover:bg-opacity-20
+        hover:bg-secondary hover:text-secondary font-bold my-3 mr-2"
+        >
+          <span className="text-4xl ">
+            <AiFillGithub />
+          </span>
+        </a>
+        <a
+          className="py-2 px-2 border-2 border-secondary rounded-2xl
+        text-white w-fit flex text-xl justify-evenly cursor-pointer hover:bg-opacity-20
         hover:bg-secondary hover:text-secondary font-bold my-3"
-      >
-        Github
-        <span className="text-2xl ">
-          <AiFillGithub />
-        </span>
-      </a>
+        >
+          <span className="text-4xl ">
+            <AiFillLinkedin />
+          </span>
+        </a>
+      </div>
     </div>
   );
 };

@@ -3,9 +3,8 @@ import { navItems } from "../data/data";
 import { NavLink } from "react-router-dom";
 const Navigation = () => {
   const activeLink =
-    "text-2xl font-bold text-secondary transition-all hover:opacity-60 w-fit";
-  const normalLink =
-    "text-2xl font-bold text-white transition-all hover:opacity-60 w-fit";
+    "text-5xl text-secondary transition-all hover:opacity-60 w-fit";
+  const normalLink = "text-3xl text-head transition-all hover:opacity-60 w-fit";
 
   const navigationItems = () => {
     return navItems.map((item, index) => {

@@ -6,7 +6,9 @@ module.exports = {
     colors: {
       transparent: "transparent",
       main: "#061A40",
+      box: "#0d1b32",
       secondary: "#64ffda",
+      head: "#ccd6f6",
       text: "#a3afd1",
       mint: "#F1FFFA",
       rose: "#DB2B39",
@@ -19,7 +21,7 @@ module.exports = {
       width: {
         100: "30rem",
         110: "35rem",
-        120: "40rem", 
+        120: "40rem",
       },
     },
 
@@ -27,5 +29,5 @@ module.exports = {
       roboto: ["Roboto", "seri"],
     },
   },
-  plugins: [],
+  plugins: [require("tailwind-scrollbar")],
 };

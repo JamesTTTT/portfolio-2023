@@ -47,25 +47,38 @@ const Projects = () => {
   };
 
   return (
-    <div className="mb-10 mx-2 w-110 flex flex-col justify-start h-full mr-20">
-      <div className="flex mb-10 justify-center w-fit">{projectMap()}</div>
-      <p className="text-lg">{selected.desc}</p>
-      <ul className="flex text-secondary font-bold">{techMap()}</ul>
-      <div className="flex">
-        <a
-          href={selected.github}
-          className="text-4xl my-2 p-2 cursor-pointer hover:text-secondary border-2 rounded-2xl
+    <div className="mb-10 mx-2 w-110 flex flex-col justify-center h-full mr-20">
+      <h1 className="pb-8 text-6xl font-semibold">
+        What i have been working on
+      </h1>
+
+      <div className="flex mb-4 justify-center w-fit">{projectMap()}</div>
+      <div className="bg-box p-5 border border-secondary">
+        <p
+          className="text-xl text-head max-h-80 overflow-scroll
+         scrollbar-thumb-blue-400 font-normal"
+        >
+          {selected.desc}
+        </p>
+
+        <ul className="flex text-secondary font-bold">{techMap()}</ul>
+
+        <div className="flex">
+          <a
+            href={selected.github}
+            className="text-4xl my-2 p-2 cursor-pointer hover:text-secondary border-2 rounded-2xl
           hover:bg-secondary hover:bg-opacity-20 border-secondary"
-        >
-          <AiFillGithub />
-        </a>
-        <a
-          href={selected.url}
-          className="text-4xl p-2 my-2 mx-2 cursor-pointer hover:text-secondary border-2 rounded-2xl
+          >
+            <AiFillGithub />
+          </a>
+          <a
+            href={selected.url}
+            className="text-4xl p-2 my-2 mx-2 cursor-pointer hover:text-secondary border-2 rounded-2xl
            hover:bg-secondary hover:bg-opacity-20 border-secondary"
-        >
-          <AiOutlineLink />
-        </a>
+          >
+            <AiOutlineLink />
+          </a>
+        </div>
       </div>
     </div>
   );

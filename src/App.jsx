@@ -23,14 +23,17 @@ const App = () => {
             style={{ zIndex: 10 }}
             className="w-full p-4 z-10 h-full overflow-hidden"
           >
-            <h1 className=" text-6xl">James Taylor</h1>
-            <p className="p-2 text-2xl text-secondary">Fullstack Developer</p>
-
             <BrowserRouter>
               <div className="flex justify-between h-full ">
-                <Navigation />
+                <div>
+                  <h1 className=" text-6xl">James Taylor</h1>
+                  <p className="p-2 text-2xl text-secondary">
+                    Fullstack Developer
+                  </p>
 
-                <div className="float-right flex flex-col justify-end h-full">
+                  <Navigation />
+                </div>
+                <div className="float-right flex flex-col justify-center h-full">
                   <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/projects" element={<Projects />} />
