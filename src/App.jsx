@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from "react";
 import {
-  Contact,
-  Home,
-  Info,
   Navigation,
-  Projects,
+  AnimatedRoutes,
   P5Wrap,
   LoadingScreen,
 } from "./components";
+
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 const App = () => {
+  const logo = "<JT />";
+
   const [isLoading, setisLoading] = useState(true);
 
   if (isLoading) {
@@ -37,7 +37,7 @@ const App = () => {
             <BrowserRouter>
               <div className="flex justify-between h-full ">
                 <div>
-                  <h1 className=" text-6xl">James Taylor</h1>
+                  <h1 className="font-bold text-6xl">{logo}</h1>
                   <p className="p-2 text-2xl text-secondary">
                     Fullstack Developer
                   </p>
@@ -45,12 +45,7 @@ const App = () => {
                   <Navigation />
                 </div>
                 <div className="float-right flex flex-col justify-center h-full">
-                  <Routes>
-                    <Route path="/" element={<Home />} />
-                    <Route path="/projects" element={<Projects />} />
-                    <Route path="/info" element={<Info />} />
-                    <Route path="/contact" element={<Contact />} />
-                  </Routes>
+                  <AnimatedRoutes />
                 </div>
               </div>
             </BrowserRouter>

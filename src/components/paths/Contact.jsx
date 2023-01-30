@@ -1,9 +1,18 @@
 import React from "react";
 import { HiOutlineMail } from "react-icons/hi";
 import { contactText } from "../../data/data";
+import { motion } from "framer-motion";
 const Contact = () => {
   return (
-    <div className="mb-10 mx-2 w-110 flex flex-col justify-center h-full mr-20">
+    <motion.div
+      initial={{
+        y: window.innerHeight,
+        opacity: 0,
+      }}
+      animate={{ y: 0, opacity: 1, transition: { duration: 1.5 } }}
+      exit={{ y: -window.innerHeight, transition: { duration: 0.7 } }}
+      className="mb-10 mx-2 w-110 flex flex-col justify-center h-full mr-20"
+    >
       <h1 className="text-6xl font-semibold pb-2">{contactText.header}</h1>
       <div className="flex flex-col text-2xl text-head justify-start bg-main bg-opacity-50">
         <p>{contactText.body}</p>
@@ -18,7 +27,7 @@ const Contact = () => {
           </span>
         </a>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
