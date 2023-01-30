@@ -27,24 +27,34 @@ const Home = () => {
         <p className="text-2xl blinking-cursor font-medium text-text ">
           {body}
         </p>
-        <div className="flex ">
-          <a
-            className="py-2 px-2 border-2 border-secondary rounded-2xl
+        <div className="flex justify-between">
+          <div className="flex">
+            <a
+              className="py-2 px-2 border-2 border-secondary rounded-2xl
         text-white w-fit flex text-xl justify-evenly cursor-pointer hover:bg-opacity-20
         hover:bg-secondary hover:text-secondary font-bold my-3 mr-2"
-          >
-            <span className="text-4xl ">
-              <AiFillGithub />
-            </span>
-          </a>
+            >
+              <span className="text-4xl ">
+                <AiFillGithub />
+              </span>
+            </a>
+            <a
+              className="py-2 px-2 border-2 border-secondary rounded-2xl
+        text-white w-fit flex text-xl justify-evenly cursor-pointer hover:bg-opacity-20
+        hover:bg-secondary hover:text-secondary font-bold my-3"
+            >
+              <span className="text-4xl ">
+                <AiFillLinkedin />
+              </span>
+            </a>
+          </div>
           <a
-            className="py-2 px-2 border-2 border-secondary rounded-2xl
+            className="py-3 px-4 border-2 border-secondary rounded-2xl
         text-white w-fit flex text-xl justify-evenly cursor-pointer hover:bg-opacity-20
         hover:bg-secondary hover:text-secondary font-bold my-3"
           >
-            <span className="text-4xl ">
-              <AiFillLinkedin />
-            </span>
+            <span>Resume</span>
+            <span className="text-4xl "></span>
           </a>
         </div>
       </div>

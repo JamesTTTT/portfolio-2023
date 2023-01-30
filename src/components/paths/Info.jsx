@@ -28,7 +28,7 @@ const Info = () => {
       }}
       animate={{ y: 0, opacity: 1, transition: { duration: 1.5 } }}
       exit={{ y: -window.innerHeight, transition: { duration: 0.7 } }}
-      className=" max-w-110 w-110 overflow-hidden mb-10 h-full cursor-default flex flex-col justify-start mr-20"
+      className=" max-w-110 w-110 overflow-hidden mb-10 h-full cursor-default flex flex-col justify-center mr-20 "
     >
       <div className="h-fit bg-main bg-opacity-50">
         <h1 className="pb-8 text-6xl font-semibold opa">About me</h1>
