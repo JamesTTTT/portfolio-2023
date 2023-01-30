@@ -48,3 +48,7 @@ export const projects = [
     img: "",
   },
 ];
+
+export const contact = [
+    
+]
