@@ -37,7 +37,7 @@ const App = () => {
             <BrowserRouter>
               <div className="flex justify-between h-full ">
                 <div>
-                  <h1 className="font-bold text-6xl">{logo}</h1>
+                  <h1 className="font-bold text-6xl ">{logo}</h1>
                   <p className="p-2 text-2xl text-secondary">
                     Fullstack Developer
                   </p>

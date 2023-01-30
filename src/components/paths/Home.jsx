@@ -3,16 +3,7 @@ import { homeText } from "../../data/data";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import { motion } from "framer-motion";
 const Home = () => {
-  const [header, setHeader] = useState("");
   const [body, setBody] = useState("");
-
-  useEffect(() => {
-    const timeout = setTimeout(() => {
-      setHeader(homeText.header.slice(0, header.length + 1));
-    }, 20);
-
-    return () => clearTimeout(timeout);
-  }, [header]);
 
   useEffect(() => {
     const timeout = setTimeout(() => {
@@ -32,7 +23,7 @@ const Home = () => {
     >
       <div className="mb-10 mx-2 w-110 flex flex-col justify-center mr-20 bg-main bg-opacity-50 h-full">
         <p className="text-xl text-secondary font-bold">About me: </p>
-        <h1 className="text-5xl font-bold my-2 ">{header}</h1>
+        <h1 className="text-5xl font-bold my-2 ">{homeText.header}</h1>
         <p className="text-2xl blinking-cursor font-medium text-text ">
           {body}
         </p>

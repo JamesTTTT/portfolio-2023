@@ -22,6 +22,11 @@ export const homeText = {
   body: "I am a student studying full stack web development at Blekinge Institute of Technology. I am passionate about coding and im always trying to learn new technologies to improve my skills. I am dedicated to always deliver a great and accessible user experiences.",
 };
 
+export const aboutMe = {
+  header: "I build for the web",
+  body: "As a full-stack web development student at Blekinge Institute of Technology, I am dedicated to improving my skills and knowledge. My goal is to emerge as a versatile and proficient developer, always seeking opportunities to learn the latest techniques and technologies.  I am eager to grow and excel in this ever-evolving industry.",
+};
+
 export const contactText = {
   header: "Get in touch!",
   body: "Please reach out for career opportunities or project inquiries! I would love to hear from you and discuss potential collaboration. Feel free to email me",
@@ -64,7 +69,10 @@ export const skills = [
   "Javascript",
   "Typescript",
   "React",
+  "Reacr Native",
+  "SQL",
   "Node.js",
   "Python",
   "PHP",
+  "Tailwind",
 ];
