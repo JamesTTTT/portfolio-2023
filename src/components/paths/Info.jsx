@@ -1,16 +1,9 @@
 import React from "react";
 import { AiFillCaretRight } from "react-icons/ai";
+import { skills } from "../../data/data";
 const Info = () => {
   const competensList = () => {
-    const content = [
-      "Javascript",
-      "Typescript",
-      "React",
-      "Node.js",
-      "Python",
-      "PHP",
-    ];
-    return content.map((item, index) => {
+    return skills.map((item, index) => {
       return (
         <li
           key={index}

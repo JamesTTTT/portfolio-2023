@@ -21,11 +21,11 @@ const Home = () => {
   }, [body]);
 
   return (
-    <div className="mb-10 mx-2 w-110 flex flex-col justify-center h-full mr-20">
+    <div className="mb-10 mx-2 w-110 flex flex-col justify-center mr-20 bg-main bg-opacity-50 h-fit">
       <p className="text-xl text-secondary font-bold">About me: </p>
       <h1 className="text-5xl font-bold my-2 ">{header}</h1>
       <p className="text-2xl blinking-cursor font-medium text-text ">{body}</p>
-      <div className="flex">
+      <div className="flex ">
         <a
           className="py-2 px-2 border-2 border-secondary rounded-2xl
         text-white w-fit flex text-xl justify-evenly cursor-pointer hover:bg-opacity-20

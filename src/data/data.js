@@ -22,6 +22,11 @@ export const homeText = {
   body: "I am a student studying full stack web development at Blekinge Institute of Technology. I am passionate about coding and im always trying to learn new technologies to improve my skills. I am dedicated to always deliver a great and accessible user experiences.",
 };
 
+export const contactText = {
+  header: "Get in touch!",
+  body: "Please reach out for career opportunities or project inquiries! I would love to hear from you and discuss potential collaboration. Feel free to email me",
+};
+
 export const projects = [
   {
     title: "MyTaskScheduler",
@@ -50,5 +55,16 @@ export const projects = [
 ];
 
 export const contact = [
-    
-]
+  {
+    title: "Email",
+  },
+];
+
+export const skills = [
+  "Javascript",
+  "Typescript",
+  "React",
+  "Node.js",
+  "Python",
+  "PHP",
+];
