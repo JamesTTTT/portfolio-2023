@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import {
   Contact,
   Home,
@@ -6,9 +6,20 @@ import {
   Navigation,
   Projects,
   P5Wrap,
+  LoadingScreen,
 } from "./components";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 const App = () => {
+  const [isLoading, setisLoading] = useState(true);
+
+  if (isLoading) {
+    return (
+      <div>
+        <LoadingScreen setisLoading={setisLoading} />
+      </div>
+    );
+  }
+
   return (
     <div className="w-full h-screen max-h-screen overflow-hidden">
       <div className="flex w-full h-full justify-center items-center">
