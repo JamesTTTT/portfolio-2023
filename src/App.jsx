@@ -25,8 +25,8 @@ const App = () => {
       <div className="flex w-full h-full justify-center items-center overflow-hidden">
         <div
           id="insideFrame"
-          className="border border-secondary w-11/12 font-roboto text-white
-         h-5/6 max-h-5/6 relative overflow-hidden"
+          className=" w-full font-roboto text-white
+         h-full relative overflow-hidden"
         >
           <P5Wrap />
 
@@ -36,7 +36,7 @@ const App = () => {
           >
             <BrowserRouter>
               <div className="flex justify-between h-full ">
-                <div>
+                <div className="my-10 mx-2r">
                   <h1 className="font-bold text-6xl ">{logo}</h1>
                   <p className="p-2 text-2xl text-secondary">
                     Fullstack Developer

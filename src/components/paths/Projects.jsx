@@ -64,8 +64,8 @@ const Projects = () => {
         <div className="flex mb-4 justify-center w-fit">{projectMap()}</div>
         <div className="bg-box p-5 border border-secondary bg-opacity-60">
           <p
-            className="text-xl text-head h-80 max-h-80 overflow-scroll
-         scrollbar-thumb-blue-400 font-normal"
+            className="text-xl text-head h-80 max-h-80 overflow-y-scroll overflow-x-hidden scrollbar 
+            scrollbar-thin-gray-900 scrollbar-track-gray-100 font-normal"
           >
             {selected.desc}
           </p>
@@ -90,8 +90,8 @@ const Projects = () => {
               </a>
             </div>
             <button
-              className="text-4xl p-2 my-2 mx-2 cursor-pointer hover:text-secondary border-2 rounded-2xl
-           hover:bg-secondary hover:bg-opacity-20 border-secondary"
+              className="text-4xl p-2 my-2 mx-2 cursor-pointer hover:text-secondary rounded-2xl
+            hover:bg-opacity-20 "
             >
               <AiOutlineRight />
             </button>
