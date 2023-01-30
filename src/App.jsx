@@ -22,11 +22,11 @@ const App = () => {
 
   return (
     <div className="w-full h-screen max-h-screen overflow-hidden">
-      <div className="flex w-full h-full justify-center items-center">
+      <div className="flex w-full h-full justify-center items-center overflow-hidden">
         <div
           id="insideFrame"
           className="border border-secondary w-11/12 font-roboto text-white
-         h-5/6 max-h-5/6 relative overflow-scroll"
+         h-5/6 max-h-5/6 relative overflow-hidden"
         >
           <P5Wrap />
 
