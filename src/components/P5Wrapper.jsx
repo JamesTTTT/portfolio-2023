@@ -48,7 +48,6 @@ const Sketch = (p) => {
   };
 
   p.keyPressed = function () {
-    console.log(p.key);
     if (p.key == " ") {
       for (let i = 0; i < particles.length; i++) {
         particles[i].pause(isPaused);
@@ -84,6 +83,9 @@ const Sketch = (p) => {
 
   p.windowResized = function () {
     p.resizeCanvas(windowSize().width, windowSize().height);
+    for (let i = 0; i < particles.length; i++) {
+      particles[i].scatter();
+    }
   };
 };
 

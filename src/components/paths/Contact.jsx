@@ -19,7 +19,7 @@ const Contact = () => {
         <a
           className="py-2 px-2 border-2 border-secondary rounded-2xl
         text-white w-fit flex justify-evenly cursor-pointer hover:bg-opacity-20
-        hover:bg-secondary hover:text-secondary font-bold my-3 mr-2"
+        hover:bg-secondary hover:text-secondary font-bold my-3 mr-2 transition"
         >
           <p className="px-2 text-2xl">Email Me!</p>
           <span className="text-3xl px-2">

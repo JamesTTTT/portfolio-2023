@@ -1,3 +1,4 @@
+import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 export const navItems = [
   {
     title: "Home",
@@ -14,6 +15,21 @@ export const navItems = [
   {
     title: "Contact",
     path: "/contact",
+  },
+];
+
+export const links = [
+  {
+    title: "Github",
+    icon: <AiFillGithub />,
+  },
+  {
+    title: "LinkedIn",
+    icon: <AiFillLinkedin />,
+  },
+  {
+    title: "Resume",
+    icon: "CV",
   },
 ];
 
@@ -62,6 +78,21 @@ export const projects = [
 export const contact = [
   {
     title: "Email",
+  },
+];
+
+export const about = [
+  {
+    title: "Skills",
+    content: "",
+  },
+  {
+    title: "Experience",
+    content: "",
+  },
+  {
+    title: "Education",
+    content: "",
   },
 ];
 

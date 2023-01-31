@@ -1,6 +1,6 @@
 import React from "react";
 import { AiFillCaretRight } from "react-icons/ai";
-import { skills } from "../../data/data";
+import { about, skills } from "../../data/data";
 import { motion } from "framer-motion";
 import me from "../../assets/me.jpg";
 import { aboutMe } from "../../data/data";
@@ -17,6 +17,32 @@ const Info = () => {
           </span>
           {item}
         </li>
+      );
+    });
+  };
+
+  const draws = () => {
+    return about.map((item, index) => {
+      return (
+        <div key={index} className="w-full">
+          <input
+            id={item.title}
+            type="radio"
+            name="project"
+            value={item.title}
+            className="peer hidden "
+          />
+          <label
+            for={item.title}
+            onClick={() => {
+              setSelected(item);
+            }}
+            className="peer-checked:bg-secondary peer-checked:bg-opacity-20 py-2 px-2 border-b-2 border-secondary 
+         hover:bg-opacity-20 transition-all hover:px-4 mr-2"
+          >
+            {item.title}
+          </label>
+        </div>
       );
     });
   };
@@ -39,7 +65,7 @@ const Info = () => {
             </p>
             <p className="p-3 font-medium text-text">{aboutMe.body}</p>
           </div>
-          <div className="w-1/2 ">
+          <div className="w-1/2">
             <img
               className="rounded-2xl w-52 hover:shadow-lg border-2 border-secondary hover:border-head
                hover:scale-110 transition duration-300 ease-in-out opacity-80 hover:opacity-100"
@@ -48,7 +74,7 @@ const Info = () => {
           </div>
         </div>
         <div>
-          <h2 className="text-2xl font-medium text-head">Skills</h2>
+          <div className="flex mt-4 mb-7 justify-center w-fit">{draws()}</div>
           <ul className="grid grid-rows-3 grid-flow-col gap-1 my-4 font-semibold">
             {competensList()}
           </ul>
