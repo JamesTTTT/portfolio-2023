@@ -11,7 +11,7 @@ const Contact = () => {
       }}
       animate={{ y: 0, opacity: 1, transition: { duration: 1.5 } }}
       exit={{ y: -window.innerHeight, transition: { duration: 0.7 } }}
-      className="mb-10 mx-2 w-110 flex flex-col justify-center h-full mr-20"
+      className="mb-10 mx-2 max-w-110 w-110 flex flex-col justify-center h-full mr-20"
     >
       <h1 className="text-6xl font-semibold pb-2">{contactText.header}</h1>
       <div className="flex flex-col text-2xl text-head justify-start bg-main bg-opacity-50">

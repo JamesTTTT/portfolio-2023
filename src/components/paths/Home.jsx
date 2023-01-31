@@ -21,7 +21,7 @@ const Home = () => {
       animate={{ y: 0, opacity: 1, transition: { duration: 1.5 } }}
       exit={{ y: -window.innerHeight, transition: { duration: 0.7 } }}
     >
-      <div className="mb-10 mx-2 w-110 flex flex-col justify-center mr-20 bg-main bg-opacity-50 h-full">
+      <div className="mb-10 mx-2 max-w-110 w-110 flex flex-col justify-center mr-20 bg-main bg-opacity-50 h-full">
         <p className="text-xl text-secondary font-bold">About me: </p>
         <h1 className="text-5xl font-bold my-2 ">{homeText.header}</h1>
         <p className="text-2xl blinking-cursor font-medium text-text ">
