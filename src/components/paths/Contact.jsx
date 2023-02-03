@@ -17,6 +17,7 @@ const Contact = () => {
       <div className="flex flex-col text-2xl text-head justify-start bg-main bg-opacity-50">
         <p>{contactText.body}</p>
         <a
+          href="mailto:taylormarkaryd@gmail.com"
           className="py-2 px-2 border-2 border-secondary rounded-2xl
         text-white w-fit flex justify-evenly cursor-pointer hover:bg-opacity-20
         hover:bg-secondary hover:text-secondary font-bold my-3 mr-2 transition"

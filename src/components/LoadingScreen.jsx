@@ -24,7 +24,9 @@ const LoadingScreen = ({ setisLoading }) => {
 
   return (
     <div className="flex justify-center align-middle h-screen w-full items-center">
-      <h1 className="text-9xl text-head font-bold blinking-cursor">{jt}</h1>
+      <h1 className="text-9xl text-head font-bold blinking-cursor md:text-4xl">
+        {jt}
+      </h1>
     </div>
   );
 };

@@ -32,14 +32,14 @@ const Sketch = (p) => {
     p.fill("");
     p.textSize(25);
 
-    p.text(
-      "Scroll to change speed: " + particles[0].getMag(),
-      10,
-      windowSize().height - 20
-    );
-    p.text("'R' to reverse", 10, windowSize().height - 80);
-    p.text(pauseSatus, 10, windowSize().height - 110);
-    p.text("'E' to  reset ", 10, windowSize().height - 50);
+    // p.text(
+    //   "Scroll to change speed: " + particles[0].getMag(),
+    //   10,
+    //   windowSize().height - 20
+    // );
+    // p.text("'R' to reverse", 10, windowSize().height - 80);
+    // p.text(pauseSatus, 10, windowSize().height - 110);
+    // p.text("'E' to  reset ", 10, windowSize().height - 50);
 
     for (let i = 0; i < particles.length; i++) {
       particles[i].update();

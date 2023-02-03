@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import {
   Navigation,
   AnimatedRoutes,
@@ -7,7 +7,7 @@ import {
   Links,
 } from "./components";
 
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 const App = () => {
   const logo = "<JT />";
 
@@ -30,23 +30,25 @@ const App = () => {
          h-full relative overflow-hidden"
         >
           <P5Wrap />
-          <div className="absolute m-10">
-            <h1 className="font-bold text-6xl ">{logo}</h1>
-            <p className="p-2 text-2xl text-secondary">Fullstack Developer</p>
+          <div className="absolute mt-10 ml-10 md:flex  md:w-full md:relative">
+            <h1 className="font-bold text-6xl md:text-xl">{logo}</h1>
+            <p className="p-2 text-2xl text-secondary md:hidden">
+              Fullstack Developer
+            </p>
           </div>
           <div
             style={{ zIndex: 10 }}
-            className="w-full p-4 z-10 h-full overflow-hidden"
+            className="w-full p-4 z-10 h-full overflow-hidden md:pb-32"
           >
             <BrowserRouter>
-              <div className="flex justify-between h-full items-center">
-                <div className="mx-6">
+              <div className="flex justify-between h-full items-center md:flex-col md:justify-between ">
+                <div className="mx-6 md:mx-0 ">
                   <Navigation />
                 </div>
-                <div className="float-right flex flex-col justify-center h-full">
+                <div className="float-right flex flex-col justify-center h-full md:h-80 ">
                   <AnimatedRoutes />
                 </div>
-                <div>
+                <div className="">
                   <Links />
                 </div>
               </div>

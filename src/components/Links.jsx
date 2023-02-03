@@ -18,7 +18,9 @@ hover:bg-secondary hover:text-secondary font-normal my-3 mr-2 transition-all ite
     });
   };
   return (
-    <div className="flex flex-col justify-end items-end">{linklist()}</div>
+    <div className="flex flex-col justify-end items-end md:flex-row md:justify-evenly md:w-full">
+      {linklist()}
+    </div>
   );
 };
 
