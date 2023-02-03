@@ -22,14 +22,17 @@ export const links = [
   {
     title: "Github",
     icon: <AiFillGithub />,
+    link: "https://github.com/JamesTTTT",
   },
   {
     title: "LinkedIn",
     icon: <AiFillLinkedin />,
+    link: "https://www.linkedin.com/in/james-taylor-694428208/",
   },
   {
     title: "Resume",
     icon: "CV",
+    link: "",
   },
 ];
 
@@ -95,6 +98,18 @@ export const about = [
     content: "",
   },
 ];
+
+export const experience = [
+  {
+    title: "H-Tryck",
+    desc: " ",
+  },
+];
+
+export const education = {
+  title: "BTH",
+  desc: "Webbprogrammering ",
+};
 
 export const skills = [
   "Javascript",

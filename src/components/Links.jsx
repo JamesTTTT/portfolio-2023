@@ -7,6 +7,7 @@ const Links = () => {
       return (
         <a
           key={index}
+          href={item.link}
           className="border-2 border-secondary rounded-2xl max-w-16 w-16 h-16
 text-white flex text-xl justify-center cursor-pointer hover:bg-opacity-20
 hover:bg-secondary hover:text-secondary font-normal my-3 mr-2 transition-all items-center"

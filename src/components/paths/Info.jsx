@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import { AiFillCaretRight } from "react-icons/ai";
-import { about, skills } from "../../data/data";
+import { about, education, experience, skills } from "../../data/data";
 import { motion } from "framer-motion";
 import me from "../../assets/me.jpg";
 import { aboutMe } from "../../data/data";
-const Info = () => {
+
+const Skills = () => {
   const competensList = () => {
     return skills.map((item, index) => {
       return (
@@ -21,6 +22,41 @@ const Info = () => {
     });
   };
 
+  return (
+    <div>
+      <ul className="grid grid-rows-3 grid-flow-col gap-1 my-4 font-semibold">
+        {competensList()}
+      </ul>
+    </div>
+  );
+};
+
+const Expirence = () => {
+  const expirenceList = () => {
+    return experience.map((item, index) => {
+      return (
+        <div key={index}>
+          <p>{item.title}</p>
+          <p>{item.desc}</p>
+        </div>
+      );
+    });
+  };
+
+  return <div>{expirenceList()}</div>;
+};
+
+const Education = () => {
+  return (
+    <div>
+      <p>{education.title}</p>
+      <p>{education.desc}</p>
+    </div>
+  );
+};
+
+const Info = () => {
+  const [draw, setDraw] = useState("Skills");
   const draws = () => {
     return about.map((item, index) => {
       return (
@@ -31,12 +67,14 @@ const Info = () => {
             name="project"
             value={item.title}
             className="peer hidden "
+            onClick={(e) => {
+              setDraw(e.target.value);
+              console.log(e.target.value);
+            }}
           />
           <label
             for={item.title}
-            onClick={() => {
-              setSelected(item);
-            }}
+            value={item.title}
             className="peer-checked:bg-secondary peer-checked:bg-opacity-20 py-2 px-2 border-b-2 border-secondary 
          hover:bg-opacity-20 transition-all hover:px-4 mr-2"
           >
@@ -46,6 +84,17 @@ const Info = () => {
       );
     });
   };
+
+  const drawContent = () => {
+    if (draw === "Skills") {
+      return <Skills />;
+    } else if (draw === "Experience") {
+      return <Expirence />;
+    } else if (draw === "Education") {
+      return <Education />;
+    }
+  };
+
   return (
     <motion.div
       initial={{
@@ -75,9 +124,8 @@ const Info = () => {
         </div>
         <div>
           <div className="flex mt-4 mb-7 justify-center w-fit">{draws()}</div>
-          <ul className="grid grid-rows-3 grid-flow-col gap-1 my-4 font-semibold">
-            {competensList()}
-          </ul>
+
+          {drawContent()}
         </div>
       </div>
     </motion.div>
