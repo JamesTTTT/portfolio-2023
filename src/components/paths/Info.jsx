@@ -4,6 +4,7 @@ import { about, education, experience, skills } from "../../data/data";
 import { motion } from "framer-motion";
 import me from "../../assets/me.jpg";
 import { aboutMe } from "../../data/data";
+import BTHlogo from "../../assets/BTH-logo.png";
 
 const Skills = () => {
   const competensList = () => {
@@ -11,7 +12,7 @@ const Skills = () => {
       return (
         <li
           key={index}
-          className="text-text hover:text-secondary cursor-default flex"
+          className="text-head hover:text-secondary cursor-default flex"
         >
           <span className="text-secondary p-1 text-xs">
             <AiFillCaretRight />
@@ -35,9 +36,24 @@ const Expirence = () => {
   const expirenceList = () => {
     return experience.map((item, index) => {
       return (
-        <div key={index}>
-          <p>{item.title}</p>
-          <p>{item.desc}</p>
+        <div
+          key={index}
+          className="w-fit py-2 border-b border-secondary pl-2 pr-16 flex"
+        >
+          <div className="bg-white p-2 rounded-xl flex items-center mr-2">
+            <img className="p-0 w-24" src={item.logo} alt="company logo" />
+          </div>
+
+          {/* <p className="text-2xl text-text hover:text-secondary cursor-default">
+              {item.title}
+            </p> */}
+
+          <div>
+            <p className="text-xl text-head">{item.work}</p>
+            <spav className="text-sm">
+              {item.period[0]} - {item.period[1]}
+            </spav>
+          </div>
         </div>
       );
     });
@@ -48,9 +64,27 @@ const Expirence = () => {
 
 const Education = () => {
   return (
-    <div>
-      <p>{education.title}</p>
-      <p>{education.desc}</p>
+    <div className="flex justify-start w-100 h-fit">
+      <div className="bg-white p-2 rounded-xl h-fit">
+        <img className="p-0 w-24" src={BTHlogo} alt="BTH logo" />
+      </div>
+      <div className="px-3">
+        <a
+          href="https://www.bth.se/"
+          target="_blank"
+          className="text-lg text-head hover:text-secondary cursor-pointer"
+        >
+          {education.title}
+        </a>
+        <div className="text-sm">
+          <p>{education.degree}</p>
+          <p>{education.degree2}</p>
+          <p>{education.degree3}</p>
+        </div>
+        <p className="text-sm">
+          {education.period[0]} - {education.period[1]}
+        </p>
+      </div>
     </div>
   );
 };

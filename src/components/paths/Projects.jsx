@@ -1,6 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { projects } from "../../data/data";
-import { AiFillGithub, AiOutlineLink, AiOutlineRight } from "react-icons/ai";
+import {
+  AiFillGithub,
+  AiOutlineLink,
+  AiOutlineRight,
+  AiFillYoutube,
+} from "react-icons/ai";
 import { motion } from "framer-motion";
 
 const Projects = () => {
@@ -58,7 +63,7 @@ const Projects = () => {
     >
       <div className="mb-10 mx-2 w-110 flex flex-col justify-center h-full mr-20">
         <h1 className="pb-8 text-6xl font-semibold">
-          What i have been working on
+          What i have been working on...
         </h1>
 
         <div className="flex mb-4 justify-center w-fit">{projectMap()}</div>
@@ -89,12 +94,13 @@ const Projects = () => {
                 <AiOutlineLink />
               </a>
             </div>
-            <button
+            <a
+              href={selected.video}
               className="text-4xl p-2 my-2 mx-2 cursor-pointer hover:text-secondary rounded-2xl
             hover:bg-opacity-20 "
             >
-              <AiOutlineRight />
-            </button>
+              <AiFillYoutube />
+            </a>
           </div>
         </div>
       </div>
