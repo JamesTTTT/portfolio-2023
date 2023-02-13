@@ -11,7 +11,7 @@ export const navItems = [
     path: "/projects",
   },
   {
-    title: "Info",
+    title: "About me",
     path: "/info",
   },
   {

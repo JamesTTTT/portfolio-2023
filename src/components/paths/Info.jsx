@@ -50,7 +50,7 @@ const Expirence = () => {
 
           <div>
             <p className="text-xl text-head">{item.work}</p>
-            <spav className="text-sm">
+            <spav className="text-sm font-bold">
               {item.period[0]} - {item.period[1]}
             </spav>
           </div>
@@ -81,7 +81,7 @@ const Education = () => {
           <p>{education.degree2}</p>
           <p>{education.degree3}</p>
         </div>
-        <p className="text-sm">
+        <p className="text-sm font-bold">
           {education.period[0]} - {education.period[1]}
         </p>
       </div>
