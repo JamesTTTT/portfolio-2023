@@ -34,7 +34,7 @@ export const links = [
   {
     title: "Resume",
     icon: "CV",
-    link: "",
+    link: "https://drive.google.com/file/d/1RZ9SNrlr-jBJu8ZD0DWxrmEKGr7-re8Q/view?usp=sharing",
   },
 ];
 
@@ -54,6 +54,15 @@ export const contactText = {
 };
 
 export const projects = [
+  {
+    title: "Task Phantom",
+    img: "",
+    desc: "Full stack web application using openAI api for AI intergration",
+    url: "https://www.mytaskscheduler.com/",
+    github: "https://github.com/JamesTTTT/TaskScheduler",
+    video: "https://youtu.be/l2-BXDtKNWc",
+    tech: ["React.js", "Express.js", "Node.js", "MongoDB", "Tailwind"],
+  },
   {
     title: "MyTaskScheduler",
     desc: "My task scheduler is a web application developed by me. It allows the user to easily create tasks in such a way that is simple and straightforward. A task consists of a title, description, start date, deadline and estimated hours needed to complete. With this information my task scheduler maps out all currently active tasks on a timeline. This timeline automatically optimizes and works out if you have sufficient time to complete your work tasks. There is a settings tab where the user inputs the hours they start and finish work in a day. This what allows the algorithm to work out if all deadlines can be met.",
@@ -79,6 +88,15 @@ export const projects = [
       "Tailwind",
     ],
     img: "",
+  },
+  {
+    title: "Tailwind-config",
+    img: "",
+    desc: "Tailwind Theme Builder is a user-interface webapp that enables you to create custom Tailwind CSS theme configurations effortlessly. With its intuitive UI, you can easily adjust settings like colors, typography, and sizes to suit your project's needs. Export your custom configuration and integrate it into your Tailwind CSS project. ",
+    url: "https://www.mytaskscheduler.com/",
+    github: "https://github.com/JamesTTTT/TaskScheduler",
+    video: "https://youtu.be/l2-BXDtKNWc",
+    tech: ["React.js", "Node.js", "Tailwind"],
   },
 ];
 
