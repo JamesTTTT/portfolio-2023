@@ -28,7 +28,7 @@ const Sketch = (p) => {
   };
 
   p.draw = function () {
-    p.background("#061A40");
+    p.background("#010014");
     p.fill("");
     p.textSize(25);
 

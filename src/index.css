@@ -4,11 +4,11 @@
 @tailwind utilities;
 
 html {
-    background-color:#061A40;
+    background-color:#010014;
 }
 
 .bg-code{
-    background-color: rgb(40, 42, 54);
+    background-color: 010014;
 }
 
 .blinking-cursor::after {

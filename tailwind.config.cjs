@@ -5,12 +5,12 @@ module.exports = {
   theme: {
     colors: {
       transparent: "transparent",
-      main: "#061A40",
+      main: "#010014",
       box: "#0d1b32",
-      secondary: "#64ffda",
+      secondary: "#91cde6",
       head: "#ccd6f6",
       text: "#a3afd1",
-      mint: "#F1FFFA",
+      mint: "#91cde6",
       rose: "#DB2B39",
       white: "#FFFFFF",
     },

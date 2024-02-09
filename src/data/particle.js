@@ -41,7 +41,7 @@ export default class Particle {
   display() {
     this.p.noStroke();
     this.p.strokeWeight(1);
-    this.p.fill("#64ffda");
+    this.p.fill("#91cde6");
     this.p.ellipse(this.position.x, this.position.y, 2, 2);
   }
 
