@@ -1,6 +1,7 @@
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import Compileit from "../assets/compileit-meta.png";
 import Htryck from "../assets/H-tryck.png";
+import tp from "../assets/tp.png";
 export const navItems = [
   {
     title: "Home",
@@ -56,10 +57,10 @@ export const contactText = {
 export const projects = [
   {
     title: "Task Phantom",
-    img: "",
-    desc: "Full stack web application using openAI api for AI intergration",
+    img: tp,
+    desc: "Task Phantom is a full-stack web application focused on project management and task organization. It incorporates a secure authentication system to protect user data. The application's primary function is to assist in managing tasks efficiently, catering to various project needs. It includes a calendar feature, which is instrumental in keeping track of task deadlines, ensuring timely completion of projects. A distinctive aspect of Task Phantom is its integration with OpenAI technology. This feature provides AI-based recommendations for task management, aiming to enhance productivity by offering intelligent and tailored task suggestions. The app serves as a tool for streamlined project management with an added dimension of AI-driven assistance.",
     url: "https://www.mytaskscheduler.com/",
-    github: "https://github.com/JamesTTTT/TaskScheduler",
+    github: "https://github.com/JamesTTTT/TaskScheduler-2-Frontend",
     video: "https://youtu.be/l2-BXDtKNWc",
     tech: ["React.js", "Express.js", "Node.js", "MongoDB", "Tailwind"],
   },
@@ -94,7 +95,7 @@ export const projects = [
     img: "",
     desc: "Tailwind Theme Builder is a user-interface webapp that enables you to create custom Tailwind CSS theme configurations effortlessly. With its intuitive UI, you can easily adjust settings like colors, typography, and sizes to suit your project's needs. Export your custom configuration and integrate it into your Tailwind CSS project. ",
     url: "https://www.mytaskscheduler.com/",
-    github: "https://github.com/JamesTTTT/TaskScheduler",
+    github: "https://github.com/JamesTTTT/Tailwind-config-generator",
     video: "https://youtu.be/l2-BXDtKNWc",
     tech: ["React.js", "Node.js", "Tailwind"],
   },
@@ -123,16 +124,28 @@ export const about = [
 
 export const experience = [
   {
-    title: "H-Tryck",
-    logo: Htryck,
-    work: "Frontend Developer",
-    period: ["March 2021", "July 2021"],
+    title: "Ericsson",
+    logo: "",
+    work: "Research & Development Intern",
+    period: ["January 2023", "Current"],
+  },
+  {
+    title: "Blekinge Institute of Technology (BTH",
+    logo: "",
+    work: "Teacher Assistant",
+    period: ["January 2023", "December 2023"],
   },
   {
     title: "Compileit",
     logo: Compileit,
     work: "Frontend Developer",
-    period: ["January 2023", "Current"],
+    period: ["January 2023", "June 2023"],
+  },
+  {
+    title: "H-Tryck",
+    logo: Htryck,
+    work: "Web Developer",
+    period: ["March 2021", "July 2021"],
   },
 ];
 

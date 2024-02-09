@@ -19,7 +19,7 @@ const Projects = () => {
   const projectMap = () => {
     return projects.map((item, index) => {
       return (
-        <div key={index} className=" w-full">
+        <div key={index}>
           <input
             id={item.title}
             type="radio"
@@ -33,7 +33,7 @@ const Projects = () => {
               setSelected(item);
             }}
             className="peer-checked:bg-secondary peer-checked:bg-opacity-20 py-2 px-2 border-b-2 border-secondary 
-             hover:bg-opacity-20 transition-all hover:px-4 mr-2"
+             hover:bg-opacity-20 transition-all hover:bg-secondary mr-2"
           >
             {item.title}
           </label>
@@ -66,10 +66,11 @@ const Projects = () => {
           What i have been working on...
         </h1>
 
-        <div className="flex mb-4 justify-center w-fit">{projectMap()}</div>
+        <div className="flex mb-4 w-full">{projectMap()}</div>
         <div className="bg-box p-5 border border-secondary bg-opacity-60">
+          <img src={selected.img} alt="Screenshot of app" className="py-2" />
           <p
-            className="text-xl text-head h-80 max-h-80 overflow-y-scroll overflow-x-hidden scrollbar 
+            className="text-md text-head h-80 max-h-80 overflow-y-scroll overflow-x-hidden scrollbar 
             scrollbar-thin-gray-900 scrollbar-track-gray-100 font-normal"
           >
             {selected.desc}

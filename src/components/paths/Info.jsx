@@ -38,15 +38,15 @@ const Expirence = () => {
       return (
         <div
           key={index}
-          className="w-fit py-2 border-b border-secondary pl-2 pr-16 flex"
+          className="py-2 w-110 border-b border-secondary pl-2 pr-16 flex flex-col"
         >
-          <div className="bg-white p-2 rounded-xl flex items-center mr-2">
+          {/* <div className="bg-white p-2 rounded-xl flex items-center mr-2">
             <img className="p-0 w-24" src={item.logo} alt="company logo" />
-          </div>
+          </div> */}
 
-          {/* <p className="text-2xl text-text hover:text-secondary cursor-default">
-              {item.title}
-            </p> */}
+          <p className="text-2xl text-text hover:text-secondary cursor-default">
+            {item.title}
+          </p>
 
           <div>
             <p className="text-xl text-head">{item.work}</p>
