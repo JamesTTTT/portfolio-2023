@@ -2,9 +2,9 @@ import React, { useEffect, useState } from "react";
 import { homeText } from "../../data/data";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import { motion } from "framer-motion";
+import { client } from "../../sanity/client";
 const Home = () => {
   const [body, setBody] = useState("");
-
   useEffect(() => {
     const timeout = setTimeout(() => {
       setBody(homeText.body.slice(0, body.length + 1));

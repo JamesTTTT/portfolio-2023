@@ -2,6 +2,7 @@ import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import Compileit from "../assets/compileit-meta.png";
 import Htryck from "../assets/H-tryck.png";
 import tp from "../assets/tp.png";
+
 export const navItems = [
   {
     title: "Home",
@@ -41,12 +42,12 @@ export const links = [
 
 export const homeText = {
   header: "Hi! my name is James Taylor",
-  body: "I am a student studying full stack web development at Blekinge Institute of Technology. I am passionate about coding and im always trying to learn new technologies to improve my skills. I am dedicated to always deliver a great and accessible user experiences.",
+  body: "I'm a full-stack engineer passionate about building software, both professionally and in my personal projects. My background includes building and deploying applications with technologies like TypeScript, Node.js, and Python. I find my favorite work lies in collaborating with other professionals, exchanging ideas, and learning new skills along the way.",
 };
 
 export const aboutMe = {
   header: "I build for the web",
-  body: "As a full-stack web development student at Blekinge Institute of Technology, I am dedicated to improving my skills and knowledge. My goal is to emerge as a versatile and proficient developer, always seeking opportunities to learn the latest techniques and technologies.  I am eager to grow and excel in this ever-evolving industry.",
+  body: "I am a young professional who takes every opportunity to learn and gain experience on each project and from every person I work with. I see every challenge as a valuable learning experience, helping me grow and develop new skills.",
 };
 
 export const contactText = {
@@ -65,8 +66,8 @@ export const projects = [
     tech: ["React.js", "Express.js", "Node.js", "MongoDB", "Tailwind"],
   },
   {
-    title: "MyTaskScheduler",
-    desc: "My task scheduler is a web application developed by me. It allows the user to easily create tasks in such a way that is simple and straightforward. A task consists of a title, description, start date, deadline and estimated hours needed to complete. With this information my task scheduler maps out all currently active tasks on a timeline. This timeline automatically optimizes and works out if you have sufficient time to complete your work tasks. There is a settings tab where the user inputs the hours they start and finish work in a day. This what allows the algorithm to work out if all deadlines can be met.",
+    title: "AI chatbot suite",
+    desc: "Proof-of-concept system that enhances customer support using an ML-powered chatbot. Developed a unified Flask REST API to power a multi-faceted system, including a customer-facing chatbot, aninternal case management portal for support agents, and a dashboard for training and deploying new chatbot models. Utilized Retrieval-Augmented Generation (RAG) with the OpenAI API to allow the chatbot to answer questions from a knowledge base and classify support cases.",
     url: "https://www.mytaskscheduler.com/",
     github: "https://github.com/JamesTTTT/TaskScheduler",
     video: "https://youtu.be/l2-BXDtKNWc",
@@ -124,10 +125,16 @@ export const about = [
 
 export const experience = [
   {
+    title: "Malvacom AB",
+    logo: "",
+    work: "Fullstack Software Engineer",
+    period: ["January 2025", "Current"],
+  },
+  {
     title: "Ericsson",
     logo: "",
-    work: "Research & Development Intern",
-    period: ["January 2023", "Current"],
+    work: "Software Developer & Former Intern",
+    period: ["January 2023", "January 2025"],
   },
   {
     title: "Blekinge Institute of Technology (BTH",
@@ -161,11 +168,11 @@ export const education = {
 export const skills = [
   "Javascript",
   "Typescript",
-  "React",
-  "Reacr Native",
-  "SQL",
+  "React js",
+  "C#",
+  "SQL & Postgres",
   "Node.js",
   "Python",
   "PHP",
-  "Tailwind",
+  "Django",
 ];
