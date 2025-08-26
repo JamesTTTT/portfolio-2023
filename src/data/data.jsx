@@ -36,7 +36,7 @@ export const links = [
   {
     title: "Resume",
     icon: "CV",
-    link: "https://drive.google.com/file/d/1RZ9SNrlr-jBJu8ZD0DWxrmEKGr7-re8Q/view?usp=sharing",
+    link: "https://drive.google.com/file/d/1svCn9fFVGDOOLSc6p9hlr0VOz3IUtuqg/view?usp=sharing",
   },
 ];
 
@@ -68,10 +68,10 @@ export const projects = [
   {
     title: "AI chatbot suite",
     desc: "Proof-of-concept system that enhances customer support using an ML-powered chatbot. Developed a unified Flask REST API to power a multi-faceted system, including a customer-facing chatbot, aninternal case management portal for support agents, and a dashboard for training and deploying new chatbot models. Utilized Retrieval-Augmented Generation (RAG) with the OpenAI API to allow the chatbot to answer questions from a knowledge base and classify support cases.",
-    url: "https://www.mytaskscheduler.com/",
-    github: "https://github.com/JamesTTTT/TaskScheduler",
-    video: "https://youtu.be/l2-BXDtKNWc",
-    tech: ["JavaScript", "React", "Tailwind"],
+    url: "",
+    github: "",
+    video: "",
+    tech: ["Flask", "Python", "React", "Postgres", "RAG", "AI"],
     img: "",
   },
   {
